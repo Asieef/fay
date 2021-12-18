@@ -1,0 +1,167 @@
+:root {
+    --dark:#5D5C61;
+    --ldark:#379683;
+    --aqua:#7395AE;
+    --daqua:#557A95;
+    --light:#B1A296;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: var(--dark);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+  }
+
+.wrapper{
+    display: grid;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--ldark);
+}
+
+.header .logo{
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.header .nav{
+    text-align: right;
+    padding: 1rem 0;
+}
+
+.header ul{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.header li{
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover{
+    color: var(--light);
+}
+
+.showcase{
+    background: url(./Media/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.showcase h2{
+    color:var(--dark);
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.showcase p{
+    color:var(--dark);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.newsletter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--ldark);
+}
+
+.newsletter .news-text{
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.newsletter .news-form{
+    padding: 2rem 2rem;
+    color: white;
+    text-align: right;
+}
+
+.button_1{
+    background-color: var(--light);
+    padding: 6px 12px;
+    color: white;
+}
+
+.badge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+.badge .box{
+    padding: 0 3rem;
+}
+
+footer{
+    background-color: var(--ldark);
+    color: white;
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px){
+
+    .badge{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .header{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .logo{
+        padding: 0.4rem 0;
+    }
+
+    .header .nav{
+        padding: 0.1rem 0;
+    }
+
+    .badge{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
