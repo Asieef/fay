@@ -193,4 +193,18 @@ footer{
     padding: 1rem 1rem;
 }
 
+.header li{
+    padding: 1rem 1rem;
+}
+
+.newsletter .news-text{
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.newsletter .news-form{
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
 }
