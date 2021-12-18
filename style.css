@@ -38,6 +38,11 @@ img {
     padding: 1rem 2rem;
 }
 
+.header .highlight{
+    color: var(--dark);
+}
+
+
 .header .nav{
     text-align: right;
     padding: 1rem 0;
@@ -100,10 +105,23 @@ img {
     text-align: right;
 }
 
+input[type="email"] {
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid var(--daqua);
+ }
+
 .button_1{
-    background-color: var(--light);
-    padding: 6px 12px;
-    color: white;
+    border: none;
+   outline: none;
+   background: transparent;
+   background-color: var(--light);
+   padding: 10px 20px;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
 }
 
 .badge{
@@ -120,7 +138,7 @@ img {
 
 footer{
     background-color: var(--ldark);
-    color: white;
+    color:white;
     text-align: center;
 }
 
@@ -151,6 +169,7 @@ footer{
     .header .nav{
         padding: 0.1rem 0;
     }
+    
 
     .badge{
         grid-template-columns: 1fr;
