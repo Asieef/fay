@@ -30,6 +30,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--ldark);
+    border-bottom: 6px solid var(--dark);
 }
 
 .header .logo{
