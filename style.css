@@ -189,15 +189,15 @@ footer{
 
 @media (max-width: 576px){
 .header .nav{
-    font-size: 0.8rem;
-    padding: 1rem 1rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.2rem;
 }
 
 .header li{
-    padding: 1rem 1rem;
-    display: block;
+    padding: 0.6rem 0.6rem;
     text-align: center;
 }
+
 
 .newsletter .news-text{
     padding: 1rem 1rem;
@@ -207,6 +207,20 @@ footer{
 .newsletter .news-form{
     padding: 1rem 1rem;
     text-align: center;
+}
+
+input[type="email"] {
+display: block;
+margin-bottom: 1rem;
+ }
+
+.button_1{
+  display: block;
+  margin: 0 auto;
+}
+
+.badge .box{
+    padding: 0 1rem;
 }
 
 }
